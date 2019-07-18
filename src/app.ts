@@ -1,5 +1,4 @@
 import TaskManager from './todo/TaskManager';
+import Group from './ts/Group';
 
-let manager = new TaskManager();
-manager.add("new task01")
-console.log("this is app.ts", manager)
+export { TaskManager, Group }

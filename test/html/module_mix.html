@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+
+<h1>複数モジュールのビルド</h1>
+
+<script type="text/javascript" src="../../dist/tsjsmix.bundle.js"></script>
+<script type="text/javascript">
+var yaoya = new tsjsmix.Shop("八百屋");
+var daikon = yaoya.createFood("大根");
+yaoya.join(daikon);
+
+var nijin = yaoya.createFood("にんじん");
+yaoya.join(nijin);
+
+yaoya.greeting();
+</script>
+</body>

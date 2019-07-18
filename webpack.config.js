@@ -6,6 +6,7 @@ module.exports = {
         app :'./src/app.ts'
     },
     output: {
+		library: "app",
 		path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },

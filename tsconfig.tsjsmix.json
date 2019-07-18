@@ -6,6 +6,7 @@
     "esModuleInterop": false,
 	"outDir": "dist",
 	"charset": "utf8",
-	"declaration": true
+	"allowJs" : true,
+	"declaration": false
   }
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+
+<h1>複数モジュールのビルド</h1>
+
+<script type="text/javascript" src="dist/lib/es6sample.bundle.js"></script>
+<script type="text/javascript" src="dist/app.bundle.js"></script>
+<script type="text/javascript">
+var group = new app.Group("グループです");
+var person = group.createPerson("山田", 20);
+group.join(person);
+group.greeting();
+</script>
+</body>

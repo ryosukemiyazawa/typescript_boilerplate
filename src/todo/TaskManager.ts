@@ -2,18 +2,24 @@ import Task from './Task'
 
 export default class TaskManager {
 
-	private taskList : Task[] = []
+	private _taskList : Task[] = []
 
 	constructor() {
 		
 	}
 
-	public add(message: string){
-		this.taskList.push(new Task(message))
+	get taskList() : Task[] {
+		return this._taskList;
+	}
+
+	public add(message: string):Task{
+		let task = new Task(message)
+		this._taskList.push(task)
+		return task
 	}
 
 	public remove(target : Task){
-		this.taskList = this.taskList.filter(task => task != target)
+		this._taskList = this.taskList.filter(task => task != target)
 	}
 
 }
